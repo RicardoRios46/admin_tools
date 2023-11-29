@@ -1,0 +1,16 @@
+#%Module -*- tcl -*-
+##
+## modulefile
+##
+proc ModulesHelp { } {
+
+  puts stderr "\tAdds dmri-explorer to your environment variables,"
+}
+
+module-whatis "adds dmri-explorer compilers to your environment variables"
+
+set               root                 /home/inb/soporte/lanirem_software/dmri-explorer
+
+prepend-path	PATH           $root/build/Engine
+
+
