@@ -1,0 +1,17 @@
+#%Module -*- tcl -*-
+##
+## modulefile
+##
+proc ModulesHelp { } {
+
+  puts stderr "\tAdds Brkraw to your environment variables,"
+}
+
+module-whatis "adds Brkraw to your environment variables"
+
+set               root                 /home/inb/soporte/lanirem_software/python_bins/brkraw
+
+prepend-path	PATH           $root/0.3.07
+
+conflict    brkraw
+
